@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Connect</string>
+    <string name="name">Name</string>
+    <string name="specialist">Department</string>
+    <string name="please_fill_data">Please Fill data</string>
+    <string name="adding_loading">Loading</string>
+    <string name="email_valaidation">Plaease write Email like Exmple@gmail.com</string>
+    <string name="suceessfully_added">Successfully Added</string>
+    <string name="done_txt">Done</string>
+    <string name="home">Home</string>
+    <string name="setting">setting</string>
+    <string name="profile">Profile</string>
+    <string name="email_error">please enter your email</string>
+    <string name="password_error">please enter your password</string>
+    <string name="error_occur"> Error occur</string>
+    <string name="sign_in"> Signing in</string>
+    <string name="update_profile"> update</string>
+    <string name="edit_profile"> Edit</string>
+    <string name="empty_message"> please enter the message</string>
+    <string name="notification">Notifcation</string>
+    <string name="notification_on">on</string>
+    <string name="off">off</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+    <string name="language">Language</string>
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="name_prof">name :</string>
+    <string name="mail_prof">mail :</string>
+    <string name="university_number_prof">University Number :</string>
+    <string name="term_prof">Term :</string>
+    <string name="department_prof">Department :</string>
+    <string name="teacher_information">Teacher Information</string>
+    <string name="edit">Edit</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="list_of_student">List of Student</string>
+    <string name="write_message">write message...</string>
+    <string name="send">Send</string>
+    <string name="password">Password</string>
+    <string name="forget_passwrod">Forget Passwrod?</string>
+    <string name="login">Login</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="database_manage">Database Manage</string>
+    <string name="student_information">Student Information</string>
+    <string name="level">Level :</string>
+
+
+</resources>

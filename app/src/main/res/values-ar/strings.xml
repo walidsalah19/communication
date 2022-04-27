@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Connect</string>
+    <string name="name">الاسم</string>
+    <string name="specialist">القسم</string>
+    <string name="please_fill_data">من فضلك ادخل البيانات</string>
+    <string name="adding_loading">تحميل</string>
+    <string name="email_valaidation">من فضلك ادخل البريد الالكتروني مثل هذا Exmple@gmail.com</string>
+    <string name="suceessfully_added">تمت الإضافة بنجاح</string>
+    <string name="done_txt">تم</string>
+    <string name="home">الرئيسية</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="email_error">من فضلك ادخل البريد الالكتروني </string>
+    <string name="password_error">من فضلك ادخل كلمة المرور</string>
+    <string name="error_occur"> حدث خطاء</string>
+    <string name="sign_in"> تسجسل الدخول</string>
+    <string name="update_profile"> تحديث</string>
+    <string name="edit_profile"> إضافة </string>
+    <string name="empty_message"> من فضلك ادخل الرسالة </string>
+    <string name="notification">التنبيهات</string>
+    <string name="notification_on">تشغيل</string>
+    <string name="off">إيقاف</string>
+    <string name="dark_mode">الوضع المظلم</string>
+    <string name="dark">مظلم</string>
+    <string name="light">مضئ</string>
+    <string name="language">اللغه</string>
+    <string name="arabic">العربية </string>
+    <string name="english">الإنجليزية</string>
+    <string name="setting">الإعدادات</string>
+    <string name="name_prof">الاسم :</string>
+    <string name="mail_prof">البريد الإلكتروني :</string>
+    <string name="university_number_prof"> الرقم الجامعي :</string>
+    <string name="term_prof">الفصل :</string>
+    <string name="department_prof">القسم  :</string>
+    <string name="teacher_information">بيانات الاستاذ</string>
+    <string name="edit">إضافة</string>
+    <string name="sign_out">تسجسل خروج</string>
+    <string name="list_of_student">قائمة الطلاب</string>
+    <string name="write_message">اكتب الرسالة ...</string>
+    <string name="send">إرسال</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forget_passwrod">هل نسيت كلمة المرور ؟</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="enter_your_email">أدخل البريد الإلكترورني</string>
+    <string name="enter_your_password">أدخل كلمة المرور</string>
+    <string name="database_manage">قاعدة البيانات</string>
+
+</resources>

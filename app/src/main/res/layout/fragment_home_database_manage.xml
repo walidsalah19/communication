@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent.contentLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/students_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/card_filled"
+                    android:minHeight="100dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_1"
+                        style="@style/homeCardImage"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="32dp"
+                        android:maxHeight="50dp"
+                        android:src="@drawable/student" />
+
+
+                    <TextView
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/harmatta_en"
+                        android:text="Students"
+                        android:textSize="28sp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/teachers_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/courses_numbers_back"
+                    android:minHeight="100dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_2"
+                        style="@style/homeCardImage"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="32dp"
+                        android:maxHeight="50dp"
+                        android:src="@drawable/teacher" />
+
+
+                    <TextView
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/harmatta_en"
+                        android:text="Teachers"
+                        android:textSize="28sp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/courses_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/questions_numbers_back"
+                    android:minHeight="100dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_3"
+                        style="@style/homeCardImage"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="32dp"
+                        android:maxHeight="50dp"
+                        android:src="@drawable/courses" />
+
+
+                    <TextView
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/harmatta_en"
+                        android:gravity="center"
+                        android:text="Courses"
+                        android:textSize="28sp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/regirestation_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/workspace_numbers_back"
+                    android:minHeight="100dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_4"
+                        style="@style/homeCardImage"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="32dp"
+                        android:maxHeight="50dp"
+                        android:src="@drawable/registeration" />
+
+
+                    <TextView
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/harmatta_en"
+                        android:gravity="center"
+                        android:text="Registeration"
+                        android:textSize="28sp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

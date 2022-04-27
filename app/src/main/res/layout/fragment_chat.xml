@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_more_user"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/mainColor2"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/mainColor">
+
+            <ImageView
+                android:id="@+id/arrow_back_more_user"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_arrow_left_black_48dp"
+                app:tint="@color/white" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user_photo1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/card_filled"
+                android:src="@drawable/ic_person_black_24dp" />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Chat"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/harmatta_en"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/cardview_light_background"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/teacher_send_message"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/log_in_btn"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="@string/send"
+            android:textColor="@color/seconderyColor"
+            android:textSize="8dp"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_baseline_send_24" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/teacher_send_message"
+            android:background="@drawable/edt_outline"
+            android:layout_centerVertical="true">
+
+            <EditText
+                android:id="@+id/teacher_send_message_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/tajawal_en"
+                android:hint="@string/write_message"
+                android:inputType="textCapSentences"
+                android:maxLines="3"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/textColorSecondary"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/teacher_chat_recycler"
+        android:layout_below="@id/appbar_chat"
+        android:layout_above="@id/rl_bottom">
+
+    </androidx.recyclerview.widget.RecyclerView>
+<!--    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/man"
+             />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_chat_you">
+        <TextView
+            android:id="@+id/tv_chat_text"
+            android:layout_toLeftOf="@id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="How are You ?"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="16sp"
+            android:fontFamily="@font/tajawal_en"
+            android:background="@drawable/bg_chat_you"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:text="5:04pm"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="16sp"
+            android:fontFamily="@font/tajawal_en"
+            android:layout_centerVertical="true"/>
+    </LinearLayout>
+    </LinearLayout>-->
+</RelativeLayout>

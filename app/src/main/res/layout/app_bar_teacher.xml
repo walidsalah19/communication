@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/seconderyColor"
+            app:titleTextColor="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        layout="@layout/content_teacher"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
+        android:tint="@android:color/white"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+       android:backgroundTint="@color/mainColor"
+        android:backgroundTintMode="src_over"/>
+    <!-- <com.google.android.material.bottomnavigation.BottomNavigationView
+         android:id="@+id/t_bottom_navigation_view_linear"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom"
+         android:background="@color/white"
+         android:foreground="?attr/selectableItemBackground"
+         app:itemIconTint="@color/red_active"
+         app:itemTextColor="@color/mainColor2"
+          app:labelVisibilityMode="labeled"
+         app:menu="@menu/teacher" />-->
+  <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/t_bottom_navigation_view_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:layout_gravity="bottom"
+        >
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_title="@string/home"
+            app:bt_colorActive="@color/red_active"
+            app:bt_colorInactive="@color/red_inactive"
+            app:bt_icon="@drawable/ic_home"
+            android:gravity="center"
+            android:isScrollContainer="true"
+            app:bt_shape="@drawable/transition_background_drawable_home"
+             />
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/purple_active"
+            app:bt_colorInactive="@color/purple_inactive"
+            app:bt_icon="@drawable/ic_person"
+            app:bt_title="@string/profile"
+            android:gravity="center"
+            app:bt_shape="@drawable/transition_background_drawable_person"
+             />
+
+       <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/mainColor2"
+           android:gravity="center"
+            app:bt_colorInactive="@color/mainColor2"
+            app:bt_icon="@drawable/ic_baseline_settings_24"
+            app:bt_shape="@drawable/transition_background_drawable_search"
+            app:bt_title="@string/setting" />
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

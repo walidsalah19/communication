@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent.contentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+        <RelativeLayout
+            android:id="@+id/chat_item"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user_photo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/card_filled"
+                android:src="@drawable/ic_baseline_groups_24" />
+
+            <TextView
+                android:id="@+id/teacher_group_chat_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teacher_group_chat_txt"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/iv_user_photo"
+                android:text="Theioritical"
+                android:textColor="@color/dialog_header_color" />
+
+
+            <TextView
+                android:id="@+id/teacher_group_chat_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/iv_user_photo"
+                android:fontFamily="@font/harmatta_en"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:text="Group"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="22sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignStart="@+id/group_chat_message"
+                android:layout_below="@id/teacher_group_chat_message"
+                android:background="@color/mainColor"
+                android:backgroundTint="@color/mainColor" />
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/iv_user_photo"
+        android:fontFamily="@font/harmatta_en"
+        android:gravity="start"
+        android:text="@string/list_of_student"
+        android:textAlignment="textStart"
+        android:textColor="@color/dialog_text_color"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/teacher_student_recycler"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_photo1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_filled"
+            android:src="@drawable/ic_person_black_24dp" />
+
+        <TextView
+            android:id="@+id/group_chat_message1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_chat_txt1"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/iv_user_photo1"
+            android:text="Theioritical"
+            android:textColor="@color/dialog_header_color" />
+
+
+        <TextView
+            android:id="@+id/group_chat_txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/iv_user_photo1"
+            android:fontFamily="@font/harmatta_en"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:text="Ather Alamari"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="22sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignStart="@+id/group_chat_message1"
+            android:layout_below="@id/group_chat_message1"
+            android:background="@color/mainColor"
+            android:backgroundTint="@color/mainColor" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_photo2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/card_filled"
+            android:src="@drawable/ic_person_black_24dp" />
+
+        <TextView
+            android:id="@+id/group_chat_message2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_chat_txt2"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/iv_user_photo2"
+            android:text="Theioritical"
+            android:textColor="@color/dialog_header_color" />
+
+
+        <TextView
+            android:id="@+id/group_chat_txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/iv_user_photo2"
+            android:fontFamily="@font/harmatta_en"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:text="Ather Alamari"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="22sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignStart="@+id/group_chat_message2"
+            android:layout_below="@id/group_chat_message2"
+            android:background="@color/mainColor"
+            android:backgroundTint="@color/mainColor" />
+    </RelativeLayout>-->
+
+
+</LinearLayout>

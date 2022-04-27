@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent.contentLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user_photo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/notification" />
+
+
+            <TextView
+                android:id="@+id/group_chat_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_toEndOf="@+id/iv_user_photo"
+                android:fontFamily="@font/harmatta_en"
+                android:gravity="start"
+                android:text="@string/notification"
+                android:textAlignment="textStart"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/group_chat_txt"
+    android:layout_marginStart="16dp"
+    android:layout_toEndOf="@+id/iv_user_photo"
+    android:id="@+id/radiogroup_notification"
+    >
+            <RadioButton
+                android:id="@+id/group_chat_message"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group_chat_txt"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/iv_user_photo"
+                android:checked="true"
+                android:clickable="true"
+                android:focusable="auto"
+                android:text="@string/notification_on"
+                android:textColor="@color/darkTextColor"
+                android:visibility="visible" />
+
+
+            <RadioButton
+                android:id="@+id/group_chat_message2"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_chat_message"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/iv_user_photo"
+                android:focusable="auto"
+                android:text="@string/off"
+                android:textColor="@color/darkTextColor" />
+</RadioGroup>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_photo2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/chat" />
+
+
+        <TextView
+            android:id="@+id/group_chat_txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/iv_user_photo2"
+            android:fontFamily="@font/harmatta_en"
+            android:gravity="start"
+            android:text="@string/dark_mode"
+            android:textAlignment="textStart"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/group_chat_txt2"
+    android:layout_toEndOf="@+id/iv_user_photo2"
+    android:id="@+id/radiogroup_dark_mode"
+>
+        <RadioButton
+            android:id="@+id/dark"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:checked="true"
+            android:text="@string/dark"
+            android:textColor="@color/darkTextColor" />
+
+
+        <RadioButton
+            android:id="@+id/light"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:clickable="true"
+            android:text="@string/light"
+            android:textColor="@color/darkTextColor" />
+</RadioGroup>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_photo3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/translation" />
+
+
+        <TextView
+            android:id="@+id/group_chat_txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/iv_user_photo3"
+            android:fontFamily="@font/harmatta_en"
+            android:gravity="start"
+            android:text="@string/language"
+            android:textAlignment="textStart"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/group_chat_txt3"
+    android:layout_toEndOf="@+id/iv_user_photo3"
+    android:id="@+id/radiogroup_language"
+    >
+
+        <RadioButton
+            android:id="@+id/arabic"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/arabic"
+            android:textColor="@color/darkTextColor" />
+
+
+        <RadioButton
+            android:id="@+id/english"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:checked="true"
+            android:text="@string/english"
+            android:textColor="@color/darkTextColor" />
+</RadioGroup>
+    </RelativeLayout>
+
+
+</LinearLayout>

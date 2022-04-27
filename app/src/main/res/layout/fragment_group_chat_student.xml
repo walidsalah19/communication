@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent.contentLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+        <RelativeLayout
+            android:id="@+id/chat_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user_photo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/card_filled"
+                android:src="@drawable/ic_baseline_groups_24" />
+
+            <TextView
+                android:id="@+id/student_group_chat_section"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/student_group_chat_txt"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/iv_user_photo"
+                android:text="Sarah: when is the deadline for the ..."
+                android:textColor="@color/dialog_header_color" />
+
+
+            <TextView
+                android:id="@+id/student_group_chat_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/iv_user_photo"
+                android:fontFamily="@font/harmatta_en"
+                android:gravity="start"
+                android:text="Group"
+                android:textAlignment="textStart"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="22sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignStart="@+id/iv_user_photo"
+                android:layout_below="@id/iv_user_photo"
+                android:background="@color/mainColor"
+                android:backgroundTint="@color/mainColor" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/chat_teacher"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_photo2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_filled"
+            android:src="@drawable/ic_person_black_24dp" />
+
+        <TextView
+            android:id="@+id/teacher_name_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/iv_user_photo2"
+            android:fontFamily="@font/harmatta_en"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:text="Teacher"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="22sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignStart="@+id/group_chat_message2"
+            android:layout_below="@id/iv_user_photo2"
+            android:background="@color/mainColor"
+            android:backgroundTint="@color/mainColor" />
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

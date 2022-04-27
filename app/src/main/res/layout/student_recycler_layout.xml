@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/students_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="25dp"
+            app:cardPreventCornerOverlap="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_filled"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:maxHeight="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/student_recycler_course_docotr_name"
+                    android:id="@+id/student_recycler_course_drivasion"
+                    android:text="Theioritical"
+                    android:textColor="@color/mainColor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@id/student_recycler_course_name"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:maxHeight="50dp"
+                    android:id="@+id/student_recycler_course_docotr_name"
+                    android:text="Sabah Abdelatif Hassan Ahmed"
+                    android:textColor="@color/mainColor" />
+                <TextView
+                    style="@style/viewParent.headerText.HomeCardTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/harmatta_en"
+                    android:gravity="center"
+                    android:id="@+id/student_recycler_course_name"
+                    android:text="IS Strategies and Policies"
+                    android:textColor="@color/dialog_text_color"
+                    android:textSize="28sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
