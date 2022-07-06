@@ -1,4 +1,4 @@
-# communcation
+# communication
 Help professors to communication with student\
 The college downloads the materials on the application, and each professor and student has a special account on the application through which he can continue studying and communicate with his professors via chat
 # Technologies used on the project
